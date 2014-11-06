@@ -33,10 +33,9 @@ PRODUCT_COPY_FILES := \
 #PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/app/FDroid.apk:system/priv-app/FDroid.apk
 
-#PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1 \
     ro.build.selinux=1 \
-    ro.usb.host=1 \
     keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
