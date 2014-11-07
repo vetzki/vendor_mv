@@ -16,7 +16,6 @@
 PRODUCT_COPY_FILES := \
     vendor/mv/sounds/ringtones/analog_3.ogg:system/media/audio/ringtones/analog_3.ogg \
     vendor/mv/sounds/notifications/tuner.ogg:system/media/audio/notifications/tuner.ogg \
-    vendor/mv/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
     vendor/mv/system/media/LMspeed_508.emd:system/media/LMspeed_508.emd \
     vendor/mv/system/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
@@ -26,7 +25,7 @@ PRODUCT_COPY_FILES := \
     vendor/mv/sounds/notifications/Bender.ogg:system/media/audio/notifications/Bender.ogg
 
 # my-specific (aosp) init file
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/etc/init.aosp.rc:root/init.aosp.rc
 
 # F-Droid App store
@@ -49,7 +48,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.alarm_alert=Neon.ogg
 
 # init.d support
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/bin/sysinit:system/bin/sysinit
 
 # userinit support
