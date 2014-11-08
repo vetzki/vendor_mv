@@ -44,15 +44,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
     ro.config.ringtone=analog_3.ogg \
-    ro.config.notification_sound=Shaula.ogg \
-    ro.config.alarm_alert=Neon.ogg
+    ro.config.notification_sound=lapetus.ogg \
+    ro.config.alarm_alert=Oxygen.ogg
 
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/bin/sysinit:system/bin/sysinit
 
 # userinit support
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # OTG
@@ -60,10 +60,15 @@ PRODUCT_COPY_FILES += \
 #    frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
 
 # SU Support
-#SUPERUSER_EMBEDDED := true
-#PRODUCT_PACKAGES := \
+SUPERUSER_EMBEDDED := true
+PRODUCT_PACKAGES := \
      Superuser \
      su
+
+# Extra Packages
+PRODUCT_PACKAGES += \
+	Apollo \
+	Launcher3
 
 # Extra Packages
 #PRODUCT_PACKAGES += \
