@@ -55,6 +55,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
 
+# Gesture Input AOSP Keyboard
+PRODUCT_COPY_FILES += \
+    vendor/mv/prebuilt/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so
+
 # OTG
 #PRODUCT_COPY_FILES += \
 #    frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
