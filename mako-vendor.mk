@@ -20,7 +20,7 @@ PRODUCT_COPY_FILES := \
     vendor/mv/system/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # Bender Sound
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     vendor/mv/sounds/notifications/Bender.ogg:system/media/audio/alarms/Bender.ogg \
     vendor/mv/sounds/notifications/Bender.ogg:system/media/audio/notifications/Bender.ogg
 
