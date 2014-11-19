@@ -77,7 +77,7 @@ PRODUCT_PACKAGES += \
 	audio_effects.conf \
 	DSPManager \
 	libcyanogen-dsp \
-	Launcher3
+	Launcher2
 
 # Extra Packages
 #PRODUCT_PACKAGES += \
