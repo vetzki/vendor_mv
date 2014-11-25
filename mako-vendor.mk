@@ -72,10 +72,7 @@ PRODUCT_COPY_FILES += \
 
 # Extra Packages
 PRODUCT_PACKAGES += \
-	Apollo \
 	audio_effects.conf \
-	DSPManager \
-	libcyanogen-dsp \
 	Launcher3 \
 	unrar \
 	zip
