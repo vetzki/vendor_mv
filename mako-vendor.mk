@@ -65,8 +65,8 @@ PRODUCT_COPY_FILES += \
 #    frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
 
 # SU Support
-#SUPERUSER_EMBEDDED := true
-#PRODUCT_PACKAGES := \
+SUPERUSER_EMBEDDED := true
+PRODUCT_PACKAGES := \
      Superuser \
      su
 
