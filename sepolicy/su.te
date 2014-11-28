@@ -4,6 +4,7 @@ type superuser_device, file_type;
 
 type sudaemon, domain;
 
+userdebug_or_eng(`
   domain_trans(init, su_exec, sudaemon)
   # The userspace app uses /dev sockets to control per-app access
   allow sudaemon superuser_device:dir { create rw_dir_perms setattr unlink };
@@ -38,9 +39,11 @@ type sudaemon, domain;
   dontaudit sudaemon domain:peer *;
   dontaudit sudaemon domain:binder *;
   dontaudit sudaemon property_type:property_service *;
+')
 
 ## Perms for the app
 
+userdebug_or_eng(`
   # Translate user apps to the shell domain when using su
   domain_auto_trans(untrusted_app, su_exec, shell)
 
@@ -53,3 +56,4 @@ type sudaemon, domain;
   allow system_app superuser_device:sock_file { read write create setattr unlink getattr };
   allow system_app sudaemon:unix_stream_socket { connectto read write setopt ioctl };
   allow system_app superuser_device:dir { create rw_dir_perms setattr unlink };
+')
