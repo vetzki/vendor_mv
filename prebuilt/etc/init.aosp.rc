@@ -1,3 +1,6 @@
+# Superuser
+import /init.superuser.rc
+
 on init
     export TERM xterm
     export TERMINFO /system/etc/terminfo
