@@ -74,7 +74,9 @@ vendor/mv/prebuilt/modules_tegra/easycap.ko:system/lib/modules/easycap.ko
 # Extra Packages
 PRODUCT_PACKAGES += \
 	audio_effects.conf \
-	Launcher2
+	Launcher2 \
+	unrar \
+	zip
 
 # Extra Packages
 #PRODUCT_PACKAGES += \
