@@ -73,10 +73,7 @@ vendor/mv/prebuilt/modules_tegra/easycap.ko:system/lib/modules/easycap.ko
 
 # Extra Packages
 PRODUCT_PACKAGES += \
-	Apollo \
 	audio_effects.conf \
-	DSPManager \
-	libcyanogen-dsp \
 	Launcher2
 
 # Extra Packages
