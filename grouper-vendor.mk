@@ -75,6 +75,7 @@ vendor/mv/prebuilt/modules_tegra/easycap.ko:system/lib/modules/easycap.ko
 PRODUCT_PACKAGES += \
 	audio_effects.conf \
 	Launcher2 \
+	LockClock \
 	unrar \
 	zip
 

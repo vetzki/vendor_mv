@@ -74,6 +74,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	audio_effects.conf \
 	Launcher3 \
+	LockClock \
 	unrar \
 	zip
 
