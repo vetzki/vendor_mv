@@ -14,7 +14,9 @@
 
 # Copy Own Sound File(s)
 PRODUCT_COPY_FILES := \
-    vendor/mv/sounds/notifications/tuner.ogg:system/media/audio/notifications/tuner.ogg
+    vendor/mv/sounds/notifications/tuner.ogg:system/media/audio/notifications/tuner.ogg \
+    vendor/mv/system/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/mv/system/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 
 # Bender Sound
 PRODUCT_COPY_FILES += \
