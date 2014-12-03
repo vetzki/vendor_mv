@@ -72,7 +72,6 @@ PRODUCT_COPY_FILES += \
 
 # Extra Packages
 PRODUCT_PACKAGES += \
-	Apollo \
 	audio_effects.conf \
 	Launcher3 \
 	LockClock \
