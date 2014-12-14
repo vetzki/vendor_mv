@@ -73,6 +73,7 @@ PRODUCT_COPY_FILES += \
 # Extra Packages
 PRODUCT_PACKAGES += \
 	audio_effects.conf \
+	CMFileManager \
 	Launcher3 \
 	LockClock \
 	unrar \
