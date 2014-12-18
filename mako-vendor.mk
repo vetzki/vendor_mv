@@ -74,12 +74,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	audio_effects.conf \
 	AudioFX \
-	CMFileManager \
 	DSPManager \
 	libcyanogen-dsp \
 	Eleven \
 	Launcher3 \
 	LockClock \
+	totalcmd \
 	unrar \
 	zip
 
