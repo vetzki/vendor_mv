@@ -76,8 +76,13 @@ vendor/mv/prebuilt/modules_tegra/easycap.ko:system/lib/modules/easycap.ko
 # Extra Packages
 PRODUCT_PACKAGES += \
 	audio_effects.conf \
+	AudioFX \
+	DSPManager \
+	libcyanogen-dsp \
+	Eleven \
 	Launcher2 \
 	LockClock \
+	totalcmd \
 	unrar \
 	zip
 
