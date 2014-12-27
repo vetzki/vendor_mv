@@ -76,7 +76,7 @@ PRODUCT_PACKAGES += \
 	AudioFX \
 	DSPManager \
 	libcyanogen-dsp \
-	Eleven \
+	Apollo \
 	Launcher3 \
 	LockClock \
 	totalcmd \
