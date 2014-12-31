@@ -79,6 +79,7 @@ PRODUCT_PACKAGES += \
 	Apollo \
 	Launcher3 \
 	LockClock \
+	PhotoPhase \
 	totalcmd \
 	unrar \
 	zip
