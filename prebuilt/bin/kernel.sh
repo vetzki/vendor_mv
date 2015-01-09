@@ -2,38 +2,60 @@
 
 [ $(whoami) != "root" ] && echo "Bitte als su ausfüren"|exit 1
 
-Google() {
-echo "108 32 35 116 0 31 16 80 51 3" >/sys/devices/platform/mipi_lgit.1537/kgamma_b
-echo "76 64 68 118 1 0 0 48 32 1" >/sys/devices/platform/mipi_lgit.1537/kgamma_g
-echo "76 64 68 118 1 0 0 48 32 1" > /sys/devices/platform/mipi_lgit.1537/kgamma_r
-echo "255 255 255" > /sys/devices/platform/kcal_ctrl.0/kcal
-}
-
 LG() {
-echo "127 114 21 118 0 0 0 80 48 2" >/sys/devices/platform/mipi_lgit.1537/kgamma_b
-echo "127 114 21 118 0 0 0 80 48 2" >/sys/devices/platform/mipi_lgit.1537/kgamma_g
-echo "127 114 21 118 0 0 0 80 48 2" > /sys/devices/platform/mipi_lgit.1537/kgamma_r
+echo 118 > /sys/dev/char/10:7/blue_blacks
+echo 114 > /sys/dev/char/10:7/blue_greys
+echo 21 > /sys/dev/char/10:7/blue_mids
+echo 48 > /sys/dev/char/10:7/blue_whites
+echo 0 > /sys/dev/char/10:7/brightness
+echo 0 > /sys/dev/char/10:7/contrast
+echo 118 > /sys/dev/char/10:7/green_blacks
+echo 114 > /sys/dev/char/10:7/green_greys
+echo 21 > /sys/dev/char/10:7/green_mids
+echo 48 > /sys/dev/char/10:7/green_whites
+echo 118 > /sys/dev/char/10:7/red_blacks
+echo 114 > /sys/dev/char/10:7/red_greys
+echo 21 > /sys/dev/char/10:7/red_mids
+echo 48 > /sys/dev/char/10:7/red_whites
+echo 80 > /sys/dev/char/10:7/saturation
 echo "255 255 255" > /sys/devices/platform/kcal_ctrl.0/kcal
 }
 
-PABrighter() {
-echo "86 49 21 118 0 31 9 64 48 2" >/sys/devices/platform/mipi_lgit.1537/kgamma_b
-echo "86 49 21 118 0 31 9 64 48 2" >/sys/devices/platform/mipi_lgit.1537/kgamma_g
-echo "86 49 21 118 0 31 9 64 48 2" > /sys/devices/platform/mipi_lgit.1537/kgamma_r
-echo "245 244 240" > /sys/devices/platform/kcal_ctrl.0/kcal
+Morfic() {
+echo 67 > /sys/dev/char/10:7/blue_blacks
+echo 20 > /sys/dev/char/10:7/blue_greys
+echo 82 > /sys/dev/char/10:7/blue_mids
+echo 50 > /sys/dev/char/10:7/blue_whites
+echo 2 > /sys/dev/char/10:7/brightness
+echo 29 > /sys/dev/char/10:7/contrast
+echo 67 > /sys/dev/char/10:7/green_blacks
+echo 20 > /sys/dev/char/10:7/green_greys
+echo 82 > /sys/dev/char/10:7/green_mids
+echo 50 > /sys/dev/char/10:7/green_whites
+echo 67 > /sys/dev/char/10:7/red_blacks
+echo 20 > /sys/dev/char/10:7/red_greys
+echo 82 > /sys/dev/char/10:7/red_mids
+echo 50 > /sys/dev/char/10:7/red_whites
+echo 112 > /sys/dev/char/10:7/saturation
+echo "255 255 255" > /sys/devices/platform/kcal_ctrl.0/kcal
 }
 
-PAContrastry() {
-echo "134 64 68 118 0 26 0 64 48 2" >/sys/devices/platform/mipi_lgit.1537/kgamma_b
-echo "134 64 68 118 0 26 0 64 48 2" >/sys/devices/platform/mipi_lgit.1537/kgamma_g
-echo "134 64 68 118 0 26 0 64 48 2" > /sys/devices/platform/mipi_lgit.1537/kgamma_r
-echo "245 244 240" > /sys/devices/platform/kcal_ctrl.0/kcal
-}
-
-PAHalfbreed() {
-echo "122 64 68 118 0 25 4 66 32 1" >/sys/devices/platform/mipi_lgit.1537/kgamma_b
-echo "122 64 68 118 0 25 4 66 32 1" >/sys/devices/platform/mipi_lgit.1537/kgamma_g
-echo "122 64 68 118 0 25 4 66 32 1" > /sys/devices/platform/mipi_lgit.1537/kgamma_r
+Own1() {
+echo 116 > /sys/dev/char/10:7/blue_blacks
+echo 32 > /sys/dev/char/10:7/blue_greys
+echo 35 > /sys/dev/char/10:7/blue_mids
+echo 48 > /sys/dev/char/10:7/blue_whites
+echo 0 > /sys/dev/char/10:7/brightness
+echo 0 > /sys/dev/char/10:7/contrast
+echo 118 > /sys/dev/char/10:7/green_blacks
+echo 64 > /sys/dev/char/10:7/green_greys
+echo 68 > /sys/dev/char/10:7/green_mids
+echo 48 > /sys/dev/char/10:7/green_whites
+echo 118 > /sys/dev/char/10:7/red_blacks
+echo 64 > /sys/dev/char/10:7/red_greys
+echo 68 > /sys/dev/char/10:7/red_mids
+echo 48 > /sys/dev/char/10:7/red_whites
+echo 80 > /sys/dev/char/10:7/saturation
 echo "255 255 255" > /sys/devices/platform/kcal_ctrl.0/kcal
 }
 
@@ -47,34 +69,26 @@ case $@ in
   echo 0 | tee /sys/devices/virtual/input/lge_touch/dt_wake_enabled
   ;;
 
-  google)
-  Google
-  ;;
-  
   lg)
   LG
   ;;
-  
-  pabright)
-  PABrighter
+
+  morfic)
+  Morfic
   ;;
   
-  pacont)
-  PAContrastry
-  ;;
-  
-  pahalf)
-  PAHalfbreed
+  own1)
+  Own1
   ;;
 
   otg-on)
   echo 1 | tee /sys/module/msm_otg/parameters/otg_hack_enable
   ;;
-  
+
   otg-off)
   echo 0 | tee /sys/module/msm_otg/parameters/otg_hack_enable
   ;;
-  
+
 *)
 cat <<TEXT
 
@@ -84,11 +98,9 @@ dt-on    : Double-Tap to Wake einschalten
 dt-off   : Double-Tap to Wake ausschalten
 otg-on   : OTG An
 otg-off  : OTG Aus
-google   : Google Farbeinstellung
 lg       : LG Farbeinstellung
-pabright : "PA Brighter" Farbeinstellung
-pacont   : "PA Contrastry" Farbeinstellung
-pahalf   : "PA Halfbreed" Farbeinstellung
+morfic   : Morfic's Farbeinstellung
+own1     : Meine Farbeinstellung
 
 TEXT
 ;;
