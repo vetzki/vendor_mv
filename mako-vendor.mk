@@ -80,6 +80,7 @@ PRODUCT_PACKAGES += \
 	Launcher3 \
 	LockClock \
 	PhotoPhase \
+	Terminal \
 	totalcmd \
 	unrar \
 	zip
