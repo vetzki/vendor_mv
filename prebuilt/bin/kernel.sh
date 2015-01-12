@@ -59,6 +59,177 @@ echo 80 > /sys/dev/char/10:7/saturation
 echo "255 255 255" > /sys/devices/platform/kcal_ctrl.0/kcal
 }
 
+Own2 () {
+echo 119 > /sys/dev/char/10:7/blue_blacks
+echo 0 > /sys/dev/char/10:7/blue_greys
+echo 119 > /sys/dev/char/10:7/blue_mids
+echo 7 > /sys/dev/char/10:7/blue_whites
+echo 0 > /sys/dev/char/10:7/brightness
+echo 31 > /sys/dev/char/10:7/contrast
+echo 119 > /sys/dev/char/10:7/green_blacks
+echo 0 > /sys/dev/char/10:7/green_greys
+echo 119 > /sys/dev/char/10:7/green_mids
+echo 7 > /sys/dev/char/10:7/green_whites
+echo 119 > /sys/dev/char/10:7/red_blacks
+echo 0 > /sys/dev/char/10:7/red_greys
+echo 119 > /sys/dev/char/10:7/red_mids
+echo 7 > /sys/dev/char/10:7/red_whites
+echo 2 > /sys/dev/char/10:7/saturation
+echo "255 255 255" > /sys/devices/platform/kcal_ctrl.0/kcal
+}
+
+Xda1 () {
+echo 119 > /sys/dev/char/10:7/blue_blacks
+echo 0 > /sys/dev/char/10:7/blue_greys
+echo 119 > /sys/dev/char/10:7/blue_mids
+echo 7 > /sys/dev/char/10:7/blue_whites
+echo 0 > /sys/dev/char/10:7/brightness
+echo 31 > /sys/dev/char/10:7/contrast
+echo 119 > /sys/dev/char/10:7/green_blacks
+echo 0 > /sys/dev/char/10:7/green_greys
+echo 119 > /sys/dev/char/10:7/green_mids
+echo 7 > /sys/dev/char/10:7/green_whites
+echo 119 > /sys/dev/char/10:7/red_blacks
+echo 0 > /sys/dev/char/10:7/red_greys
+echo 119 > /sys/dev/char/10:7/red_mids
+echo 7 > /sys/dev/char/10:7/red_whites
+echo 2 > /sys/dev/char/10:7/saturation
+echo "249 249 255" > /sys/devices/platform/kcal_ctrl.0/kcal
+}
+
+Xda2 () {
+echo 119 > /sys/dev/char/10:7/blue_blacks
+echo 0 > /sys/dev/char/10:7/blue_greys
+echo 119 > /sys/dev/char/10:7/blue_mids
+echo 7 > /sys/dev/char/10:7/blue_whites
+echo 0 > /sys/dev/char/10:7/brightness
+echo 0 > /sys/dev/char/10:7/contrast
+echo 119 > /sys/dev/char/10:7/green_blacks
+echo 0 > /sys/dev/char/10:7/green_greys
+echo 119 > /sys/dev/char/10:7/green_mids
+echo 7 > /sys/dev/char/10:7/green_whites
+echo 119 > /sys/dev/char/10:7/red_blacks
+echo 0 > /sys/dev/char/10:7/red_greys
+echo 119 > /sys/dev/char/10:7/red_mids
+echo 7 > /sys/dev/char/10:7/red_whites
+echo 119 > /sys/dev/char/10:7/saturation
+echo "255 255 255" > /sys/devices/platform/kcal_ctrl.0/kcal
+}
+
+6500k422 () {
+echo 0 > /sys/dev/char/10:7/blue_blacks
+echo 0 > /sys/dev/char/10:7/blue_greys
+echo 0 > /sys/dev/char/10:7/blue_mids
+echo 0 > /sys/dev/char/10:7/blue_whites
+echo 8 > /sys/dev/char/10:7/brightness
+echo 0 > /sys/dev/char/10:7/contrast
+echo 0 > /sys/dev/char/10:7/green_blacks
+echo 0 > /sys/dev/char/10:7/green_greys
+echo 0 > /sys/dev/char/10:7/green_mids
+echo 0 > /sys/dev/char/10:7/green_whites
+echo 0 > /sys/dev/char/10:7/red_blacks
+echo 0 > /sys/dev/char/10:7/red_greys
+echo 0 > /sys/dev/char/10:7/red_mids
+echo 0 > /sys/dev/char/10:7/red_whites
+echo 71 > /sys/dev/char/10:7/saturation
+echo "255 240 222" > /sys/devices/platform/kcal_ctrl.0/kcal
+}
+
+Xda4 () {
+echo 119 > /sys/dev/char/10:7/blue_blacks
+echo 0 > /sys/dev/char/10:7/blue_greys
+echo 113 > /sys/dev/char/10:7/blue_mids
+echo 3 > /sys/dev/char/10:7/blue_whites
+echo 6 > /sys/dev/char/10:7/brightness
+echo 0 > /sys/dev/char/10:7/contrast
+echo 119 > /sys/dev/char/10:7/green_blacks
+echo 0 > /sys/dev/char/10:7/green_greys
+echo 113 > /sys/dev/char/10:7/green_mids
+echo 3 > /sys/dev/char/10:7/green_whites
+echo 119 > /sys/dev/char/10:7/red_blacks
+echo 0 > /sys/dev/char/10:7/red_greys
+echo 113 > /sys/dev/char/10:7/red_mids
+echo 3 > /sys/dev/char/10:7/red_whites
+echo 71 > /sys/dev/char/10:7/saturation
+echo "220 228 222" > /sys/devices/platform/kcal_ctrl.0/kcal
+}
+
+Xda5 () {
+echo 119 > /sys/dev/char/10:7/blue_blacks
+echo 0 > /sys/dev/char/10:7/blue_greys
+echo 103 > /sys/dev/char/10:7/blue_mids
+echo 23 > /sys/dev/char/10:7/blue_whites
+echo 8 > /sys/dev/char/10:7/brightness
+echo 25 > /sys/dev/char/10:7/contrast
+echo 119 > /sys/dev/char/10:7/green_blacks
+echo 0 > /sys/dev/char/10:7/green_greys
+echo 103 > /sys/dev/char/10:7/green_mids
+echo 23 > /sys/dev/char/10:7/green_whites
+echo 119 > /sys/dev/char/10:7/red_blacks
+echo 0 > /sys/dev/char/10:7/red_greys
+echo 103 > /sys/dev/char/10:7/red_mids
+echo 23 > /sys/dev/char/10:7/red_whites
+echo 71 > /sys/dev/char/10:7/saturation
+echo "235 245 255" > /sys/devices/platform/kcal_ctrl.0/kcal
+}
+
+XperiaZ1c () {
+echo 119 > /sys/dev/char/10:7/blue_blacks
+echo 0 > /sys/dev/char/10:7/blue_greys
+echo 87 > /sys/dev/char/10:7/blue_mids
+echo 1 > /sys/dev/char/10:7/blue_whites
+echo 0 > /sys/dev/char/10:7/brightness
+echo 0 > /sys/dev/char/10:7/contrast
+echo 119 > /sys/dev/char/10:7/green_blacks
+echo 0 > /sys/dev/char/10:7/green_greys
+echo 87 > /sys/dev/char/10:7/green_mids
+echo 2 > /sys/dev/char/10:7/green_whites
+echo 119 > /sys/dev/char/10:7/red_blacks
+echo 0 > /sys/dev/char/10:7/red_greys
+echo 87 > /sys/dev/char/10:7/red_mids
+echo 2 > /sys/dev/char/10:7/red_whites
+echo 3 > /sys/dev/char/10:7/saturation
+echo "255 241 225" > /sys/devices/platform/kcal_ctrl.0/kcal
+}
+
+6500k43 () {
+echo 119 > /sys/dev/char/10:7/blue_blacks
+echo 114 > /sys/dev/char/10:7/blue_greys
+echo 21 > /sys/dev/char/10:7/blue_mids
+echo 48 > /sys/dev/char/10:7/blue_whites
+echo 8 > /sys/dev/char/10:7/brightness
+echo 0 > /sys/dev/char/10:7/contrast
+echo 119 > /sys/dev/char/10:7/green_blacks
+echo 114 > /sys/dev/char/10:7/green_greys
+echo 21 > /sys/dev/char/10:7/green_mids
+echo 48 > /sys/dev/char/10:7/green_whites
+echo 119 > /sys/dev/char/10:7/red_blacks
+echo 113 > /sys/dev/char/10:7/red_greys
+echo 20 > /sys/dev/char/10:7/red_mids
+echo 48 > /sys/dev/char/10:7/red_whites
+echo 71 > /sys/dev/char/10:7/saturation
+echo "255 240 214" > /sys/devices/platform/kcal_ctrl.0/kcal
+}
+
+Iphone5 () {
+echo 119 > /sys/dev/char/10:7/blue_blacks
+echo 0 > /sys/dev/char/10:7/blue_greys
+echo 119 > /sys/dev/char/10:7/blue_mids
+echo 7 > /sys/dev/char/10:7/blue_whites
+echo 7 > /sys/dev/char/10:7/brightness
+echo 0 > /sys/dev/char/10:7/contrast
+echo 119 > /sys/dev/char/10:7/green_blacks
+echo 0 > /sys/dev/char/10:7/green_greys
+echo 119 > /sys/dev/char/10:7/green_mids
+echo 7 > /sys/dev/char/10:7/green_whites
+echo 119 > /sys/dev/char/10:7/red_blacks
+echo 0 > /sys/dev/char/10:7/red_greys
+echo 119 > /sys/dev/char/10:7/red_mids
+echo 7 > /sys/dev/char/10:7/red_whites
+echo 119 > /sys/dev/char/10:7/saturation
+echo "255 248 240" > /sys/devices/platform/kcal_ctrl.0/kcal
+}
+
 case $@ in
 
   dt-on)
@@ -81,6 +252,42 @@ case $@ in
   Own1
   ;;
 
+  own2)
+  Own2
+  ;;
+
+  xda1)
+  Xda1
+  ;;
+
+  xda2)
+  Xda2
+  ;;
+
+  6500k422)
+  6500k422
+  ;;
+
+  xda4)
+  Xda4
+  ;;
+
+  xda5)
+  Xda5
+  ;;
+
+  xperiaz1c)
+  XperiaZ1c
+  ;;
+
+  6500k43)
+  6500k43
+  ;;
+
+  iphone5)
+  Iphone5
+  ;;
+
   otg-on)
   echo 1 | tee /sys/module/msm_otg/parameters/otg_hack_enable
   ;;
@@ -101,6 +308,15 @@ otg-off  : OTG Aus
 lg       : LG Farbeinstellung
 morfic   : Morfic's Farbeinstellung
 own1     : Meine Farbeinstellung
+own2     : Meine Farbeinstellung 2
+xda1     : Farbeinstellung von xda
+xda2     : Farbeinstellung von xda
+6500k422 : Farbeinstellung 6500k 4.2.2 von xda
+6500k43  : Farbeinstellung 6500k 4.3 von xda
+xda4     : Farbeinstellung von xda
+xda5     : Farbeinstellung von xda
+xperiaz1c: "Xperia Z1c" Farbeinstellung lt. xda
+iphone5  : "Iphone5" Farbeinstellung von xda
 
 TEXT
 ;;
