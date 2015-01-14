@@ -135,7 +135,7 @@ echo 71 > /sys/dev/char/10:7/saturation
 echo "255 240 222" > /sys/devices/platform/kcal_ctrl.0/kcal
 }
 
-Xda4 () {
+Xda3 () {
 echo 119 > /sys/dev/char/10:7/blue_blacks
 echo 0 > /sys/dev/char/10:7/blue_greys
 echo 113 > /sys/dev/char/10:7/blue_mids
@@ -154,7 +154,7 @@ echo 71 > /sys/dev/char/10:7/saturation
 echo "220 228 222" > /sys/devices/platform/kcal_ctrl.0/kcal
 }
 
-Xda5 () {
+Xda4 () {
 echo 119 > /sys/dev/char/10:7/blue_blacks
 echo 0 > /sys/dev/char/10:7/blue_greys
 echo 103 > /sys/dev/char/10:7/blue_mids
@@ -230,6 +230,44 @@ echo 119 > /sys/dev/char/10:7/saturation
 echo "255 248 240" > /sys/devices/platform/kcal_ctrl.0/kcal
 }
 
+Neutral () {
+echo 119 > /sys/dev/char/10:7/blue_blacks
+echo 4 > /sys/dev/char/10:7/blue_greys
+echo 87 > /sys/dev/char/10:7/blue_mids
+echo 5 > /sys/dev/char/10:7/blue_whites
+echo 8 > /sys/dev/char/10:7/brightness
+echo 0 > /sys/dev/char/10:7/contrast
+echo 119 > /sys/dev/char/10:7/green_blacks
+echo 4 > /sys/dev/char/10:7/green_greys
+echo 87 > /sys/dev/char/10:7/green_mids
+echo 5 > /sys/dev/char/10:7/green_whites
+echo 119 > /sys/dev/char/10:7/red_blacks
+echo 4 > /sys/dev/char/10:7/red_greys
+echo 87 > /sys/dev/char/10:7/red_mids
+echo 5 > /sys/dev/char/10:7/red_whites
+echo 87 > /sys/dev/char/10:7/saturation
+echo "220 225 220" > /sys/devices/platform/kcal_ctrl.0/kcal
+}
+
+Warm () {
+echo 119 > /sys/dev/char/10:7/blue_blacks
+echo 3 > /sys/dev/char/10:7/blue_greys
+echo 71 > /sys/dev/char/10:7/blue_mids
+echo 3 > /sys/dev/char/10:7/blue_whites
+echo 8 > /sys/dev/char/10:7/brightness
+echo 0 > /sys/dev/char/10:7/contrast
+echo 119 > /sys/dev/char/10:7/green_blacks
+echo 3 > /sys/dev/char/10:7/green_greys
+echo 71 > /sys/dev/char/10:7/green_mids
+echo 3 > /sys/dev/char/10:7/green_whites
+echo 119 > /sys/dev/char/10:7/red_blacks
+echo 3 > /sys/dev/char/10:7/red_greys
+echo 71 > /sys/dev/char/10:7/red_mids
+echo 3 > /sys/dev/char/10:7/red_whites
+echo 23 > /sys/dev/char/10:7/saturation
+echo "230 220 215" > /sys/devices/platform/kcal_ctrl.0/kcal
+}
+
 case $@ in
 
   dt-on)
@@ -268,12 +306,12 @@ case $@ in
   6500k422
   ;;
 
-  xda4)
-  Xda4
+  xda3)
+  Xda3
   ;;
 
-  xda5)
-  Xda5
+  xda4)
+  Xda4
   ;;
 
   xperiaz1c)
@@ -286,6 +324,14 @@ case $@ in
 
   iphone5)
   Iphone5
+  ;;
+
+  neutral)
+  Neutral
+  ;;
+
+  warm)
+  Warm
   ;;
 
   otg-on)
@@ -309,14 +355,16 @@ lg       : LG Farbeinstellung
 morfic   : Morfic's Farbeinstellung
 own1     : Meine Farbeinstellung
 own2     : Meine Farbeinstellung 2
-xda1     : Farbeinstellung von xda
-xda2     : Farbeinstellung von xda
-6500k422 : Farbeinstellung 6500k 4.2.2 von xda
-6500k43  : Farbeinstellung 6500k 4.3 von xda
-xda4     : Farbeinstellung von xda
-xda5     : Farbeinstellung von xda
+xda1     : Farbeinstellung 1 (von xda)
+xda2     : Farbeinstellung 2 (von xda)
+6500k422 : Farbeinstellung 6500k 4.2.2 (von xda)
+6500k43  : Farbeinstellung 6500k 4.3 (von xda)
+xda3     : Farbeinstellung 3 (von xda)
+xda4     : Farbeinstellung 4 (von xda)
 xperiaz1c: "Xperia Z1c" Farbeinstellung lt. xda
-iphone5  : "Iphone5" Farbeinstellung von xda
+iphone5  : "Iphone5" Farbeinstellung (xda)
+neutral  : Neutrale Farbeinstellung (xda)
+warm     : "warme" Farbeinstellung (xda)
 
 TEXT
 ;;
