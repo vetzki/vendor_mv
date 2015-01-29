@@ -79,7 +79,6 @@ PRODUCT_PACKAGES += \
 	Apollo \
 	Launcher3 \
 	LockClock \
-	PhotoPhase \
 	Terminal \
 	totalcmd \
 	unrar \
