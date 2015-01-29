@@ -81,6 +81,7 @@ PRODUCT_PACKAGES += \
 	LockClock \
 	Terminal \
 	totalcmd \
+	FDroid \
 	unrar \
 	zip
 
