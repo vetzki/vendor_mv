@@ -125,14 +125,9 @@ PRODUCT_PACKAGES += \
 	start-ssh
 
 # F2FS
-PRODUCT_PACKAGES += \
-	libf2fs_fmt \
-	libf2fs_fmt_host \
-	libf2fs_fmt_host_dyn \
+#PRODUCT_PACKAGES += \
 	mkfs.f2fs \
-	fsck.f2fs \
-	f2fstat \
-	fibmap.f2fs
+	fsck.f2fs
 
 # MODULE
 PRODUCT_COPY_FILES += \
