@@ -34,7 +34,6 @@ PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/app/FDroid.apk:system/priv-app/FDroid.apk
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sys.fw.bg_apps_limit=24 \
     persist.sys.root_access=1 \
     ro.build.selinux=1 \
     keyguard.no_require_sim=true \
