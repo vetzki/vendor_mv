@@ -52,9 +52,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/bin/sysinit:system/bin/sysinit
 
-# userinit support
+# userinit + overlay support
 PRODUCT_COPY_FILES += \
-    vendor/mv/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/mv/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit \
+    vendor/mv/prebuilt/etc/init.d/99overlaydir:system/etc/init.d/99overlaydir
 
 # Gesture Input AOSP Keyboard
 PRODUCT_COPY_FILES += \
