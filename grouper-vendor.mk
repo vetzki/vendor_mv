@@ -47,10 +47,9 @@ PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/bin/sysinit:system/bin/sysinit \
     vendor/mv/prebuilt/bin/make-swapfile.sh:system/bin/mkswapfile
 
-# userinit + overlay support
+# userinit support
 PRODUCT_COPY_FILES += \
-    vendor/mv/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit \
-    vendor/mv/prebuilt/etc/init.d/99overlaydir:system/etc/init.d/99overlaydir
+    vendor/mv/prebuilt/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # Gesture Input AOSP Keyboard
 PRODUCT_COPY_FILES += \
