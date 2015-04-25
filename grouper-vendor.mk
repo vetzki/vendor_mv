@@ -55,6 +55,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so
 
+# update-hosts skript & prebuilt-rm
+PRODUCT_COPY_FILES += \
+    vendor/mv/prebuilt/bin/update-hosts.sh:system/xbin/update-hosts \
+    vendor/mv/prebuilt/bin/prebuilt-rm.sh:system/bin/prebuilt-rm
+
+
 # OTG
 #PRODUCT_COPY_FILES += \
 #    frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
@@ -75,15 +81,13 @@ vendor/mv/prebuilt/modules_tegra/easycap.ko:system/lib/modules/easycap.ko
 
 # Extra Packages
 PRODUCT_PACKAGES += \
-	audio_effects.conf \
-	AudioFX \
-	DSPManager \
-	libcyanogen-dsp \
-	Apollo \
+	MusicFX \
+	vlc-player \
 	Launcher2 \
 	LockClock \
 	Terminal \
 	totalcmd \
+	quickpic_4.2 \
 	FDroid \
 	unrar \
 	zip

@@ -18,7 +18,8 @@ PRODUCT_COPY_FILES := \
     vendor/mv/sounds/notifications/tuner.ogg:system/media/audio/notifications/tuner.ogg \
     vendor/mv/system/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     vendor/mv/system/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd \
-    vendor/mv/prebuilt/bin/kernel.sh:system/bin/kernel
+    vendor/mv/prebuilt/bin/kernel.sh:system/bin/kernel \
+    vendor/mv/prebuilt/bin/prebuilt-rm.sh:system/bin/prebuilt-rm
 
 # Bender Sound
 PRODUCT_COPY_FILES += \
@@ -60,6 +61,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so
 
+# update-hosts skript
+PRODUCT_COPY_FILES += \
+    vendor/mv/prebuilt/bin/update-hosts.sh:system/xbin/update-hosts
+
 # OTG
 #PRODUCT_COPY_FILES += \
 #    frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
@@ -72,15 +77,13 @@ PRODUCT_COPY_FILES += \
 
 # Extra Packages
 PRODUCT_PACKAGES += \
-	audio_effects.conf \
-	AudioFX \
-	DSPManager \
-	libcyanogen-dsp \
-	Apollo \
+	MusicFX \
+	vlc-player \
 	Launcher3 \
 	LockClock \
 	Terminal \
 	totalcmd \
+	quickpic_4.2 \
 	unrar \
 	zip
 
