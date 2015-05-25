@@ -58,6 +58,21 @@ echo "Bitte neustarten"
 exit 0
 }
 
+browser() {
+mount -wo remount /system
+rm -rf /system/app/Browser \
+/data/data/com.android.browser
+
+rm /data/dalvik-cache/arm/system@app@Browser@Browser.apk@classes.dex \
+/data/dalvik-cache/profiles/com.android.browser
+sync
+mount -ro remount /system
+
+echo "Bitte neustarten"
+
+exit 0
+}
+
 case "$@" in
  vlc) vlc
  ;;
@@ -65,12 +80,15 @@ case "$@" in
    ;;
      quickpic) quickpic
      ;;
+       browser) browser
+       ;;
 *)
 cat <<TEXT
 
 prebuilt-rm vlc      : VLC Player entfernen
 prebuilt-rm tc       : Total Commander entfernen
 prebuilt-rm quickpic : Quickpic entfernen
+prebuilt-rm browser  : AOSP Browser entfernen
 
 TEXT
 exit 0

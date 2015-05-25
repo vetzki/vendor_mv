@@ -44,8 +44,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/mv/prebuilt/bin/sysinit:system/bin/sysinit \
-    vendor/mv/prebuilt/bin/make-swapfile.sh:system/bin/mkswapfile
+    vendor/mv/prebuilt/bin/sysinit:system/bin/sysinit
 
 # userinit support
 PRODUCT_COPY_FILES += \
@@ -58,7 +57,9 @@ PRODUCT_COPY_FILES += \
 # update-hosts skript & prebuilt-rm
 PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/bin/update-hosts.sh:system/xbin/update-hosts \
-    vendor/mv/prebuilt/bin/prebuilt-rm.sh:system/bin/prebuilt-rm
+    vendor/mv/prebuilt/bin/prebuilt-rm.sh:system/xbin/prebuilt-rm \
+    vendor/mv/prebuilt/bin/ksmstat.sh:system/xbin/ksmstat \
+    vendor/mv/prebuilt/bin/mem.sh:system/xbin/mem
 
 
 # OTG
@@ -82,13 +83,11 @@ vendor/mv/prebuilt/modules_tegra/easycap.ko:system/lib/modules/easycap.ko
 # Extra Packages
 PRODUCT_PACKAGES += \
 	MusicFX \
-	vlc-player \
 	Launcher2 \
 	LockClock \
 	Terminal \
 	totalcmd \
 	quickpic_4.2 \
-	FDroid \
 	unrar \
 	zip
 
