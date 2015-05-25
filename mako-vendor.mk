@@ -18,8 +18,8 @@ PRODUCT_COPY_FILES := \
     vendor/mv/sounds/notifications/tuner.ogg:system/media/audio/notifications/tuner.ogg \
     vendor/mv/system/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     vendor/mv/system/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd \
-    vendor/mv/prebuilt/bin/kernel.sh:system/bin/kernel \
-    vendor/mv/prebuilt/bin/prebuilt-rm.sh:system/bin/prebuilt-rm
+    vendor/mv/prebuilt/bin/kernel.sh:system/xbin/kernel \
+    vendor/mv/prebuilt/bin/prebuilt-rm.sh:system/xbin/prebuilt-rm
 
 # Bender Sound
 PRODUCT_COPY_FILES += \
@@ -77,8 +77,8 @@ PRODUCT_COPY_FILES += \
 
 # Extra Packages
 PRODUCT_PACKAGES += \
+	Camera2 \
 	MusicFX \
-	vlc-player \
 	Launcher3 \
 	LockClock \
 	Terminal \
