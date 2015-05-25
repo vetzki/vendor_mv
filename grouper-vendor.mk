@@ -230,7 +230,6 @@ vendor/mv/prebuilt/modules_tegra/isl6423.ko:/system/lib/modules/isl6423.ko \
 vendor/mv/prebuilt/modules_tegra/itd1000.ko:/system/lib/modules/itd1000.ko \
 vendor/mv/prebuilt/modules_tegra/ix2505v.ko:/system/lib/modules/ix2505v.ko \
 vendor/mv/prebuilt/modules_tegra/joydev.ko:/system/lib/modules/joydev.ko \
-vendor/mv/prebuilt/modules_tegra/keucr.ko:/system/lib/modules/keucr.ko \
 vendor/mv/prebuilt/modules_tegra/l64781.ko:/system/lib/modules/l64781.ko \
 vendor/mv/prebuilt/modules_tegra/lgdt3305.ko:/system/lib/modules/lgdt3305.ko \
 vendor/mv/prebuilt/modules_tegra/lgdt330x.ko:/system/lib/modules/lgdt330x.ko \
@@ -267,7 +266,6 @@ vendor/mv/prebuilt/modules_tegra/qvideobuf2-core.ko:/system/lib/modules/qvideobu
 vendor/mv/prebuilt/modules_tegra/qvideobuf2-memops.ko:/system/lib/modules/qvideobuf2-memops.ko \
 vendor/mv/prebuilt/modules_tegra/qvideobuf2-vmalloc.ko:/system/lib/modules/qvideobuf2-vmalloc.ko \
 vendor/mv/prebuilt/modules_tegra/qvideodev.ko:/system/lib/modules/qvideodev.ko \
-vendor/mv/prebuilt/modules_tegra/r8187se.ko:/system/lib/modules/r8187se.ko \
 vendor/mv/prebuilt/modules_tegra/r8192e_pci.ko:/system/lib/modules/r8192e_pci.ko \
 vendor/mv/prebuilt/modules_tegra/r8192u_usb.ko:/system/lib/modules/r8192u_usb.ko \
 vendor/mv/prebuilt/modules_tegra/r8712u.ko:/system/lib/modules/r8712u.ko \
@@ -440,8 +438,6 @@ vendor/mv/prebuilt/modules_tegra/tveeprom.ko:/system/lib/modules/tveeprom.ko \
 vendor/mv/prebuilt/modules_tegra/usbtv.ko:/system/lib/modules/usbtv.ko \
 vendor/mv/prebuilt/modules_tegra/ves1820.ko:/system/lib/modules/ves1820.ko \
 vendor/mv/prebuilt/modules_tegra/ves1x93.ko:/system/lib/modules/ves1x93.ko \
-vendor/mv/prebuilt/modules_tegra/vt6655_stage.ko:/system/lib/modules/vt6655_stage.ko \
-vendor/mv/prebuilt/modules_tegra/vt6656_stage.ko:/system/lib/modules/vt6656_stage.ko \
 vendor/mv/prebuilt/modules_tegra/wl1273-core.ko:/system/lib/modules/wl1273-core.ko \
 vendor/mv/prebuilt/modules_tegra/xc4000.ko:/system/lib/modules/xc4000.ko \
 vendor/mv/prebuilt/modules_tegra/xc5000.ko:/system/lib/modules/xc5000.ko \
