@@ -44,12 +44,12 @@ exit 0
 
 quickpic() {
 mount -wo remount /system
-rm -rf /system/app/quickpic_4.2 \
+rm -rf /system/app/quickpic \
 /data/data/com.alensw.PicFolder
 
-rm /system/lib/libqpicjni152.so \
+rm /system/lib/libqpicjni156.so \
 /data/dalvik-cache/profiles/com.alensw.PicFolder \
-/data/dalvik-cache/arm/system@app@quickpic_4.2@quickpic_4.2.apk@classes.dex
+/data/dalvik-cache/arm/system@app@quickpic@quickpic.apk@classes.dex
 sync
 mount -ro remount /system
 
@@ -85,7 +85,6 @@ case "$@" in
 *)
 cat <<TEXT
 
-prebuilt-rm vlc      : VLC Player entfernen
 prebuilt-rm tc       : Total Commander entfernen
 prebuilt-rm quickpic : Quickpic entfernen
 prebuilt-rm browser  : AOSP Browser entfernen

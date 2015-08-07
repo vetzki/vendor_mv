@@ -61,9 +61,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so
 
-# update-hosts skript
+# update-hosts skript & "besseres" wget (von https://github.com/pelya/wget-android)
 PRODUCT_COPY_FILES += \
-    vendor/mv/prebuilt/bin/update-hosts.sh:system/xbin/update-hosts
+    vendor/mv/prebuilt/bin/update-hosts.sh:system/xbin/update-hosts \
+    vendor/mv/prebuilt/bin/wget:system/xbin/wget
 
 # OTG
 #PRODUCT_COPY_FILES += \
@@ -79,11 +80,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	Camera2 \
 	MusicFX \
-	Launcher3 \
+	Trebuchet \
 	LockClock \
 	Terminal \
 	totalcmd \
-	quickpic_4.2 \
+	quickpic \
 	unrar \
 	zip
 
