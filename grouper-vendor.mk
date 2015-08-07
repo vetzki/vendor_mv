@@ -54,12 +54,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/lib/libjni_unbundled_latinimegoogle.so:system/lib/libjni_unbundled_latinimegoogle.so
 
-# update-hosts skript & prebuilt-rm
+# update-hosts skript & prebuilt-rm & + "besseres" wget (von https://github.com/pelya/wget-android)
 PRODUCT_COPY_FILES += \
     vendor/mv/prebuilt/bin/update-hosts.sh:system/xbin/update-hosts \
     vendor/mv/prebuilt/bin/prebuilt-rm.sh:system/xbin/prebuilt-rm \
     vendor/mv/prebuilt/bin/ksmstat.sh:system/xbin/ksmstat \
-    vendor/mv/prebuilt/bin/mem.sh:system/xbin/mem
+    vendor/mv/prebuilt/bin/mem.sh:system/xbin/mem \
+    vendor/mv/prebuilt/bin/wget:system/xbin/wget
 
 
 # OTG
@@ -87,7 +88,7 @@ PRODUCT_PACKAGES += \
 	LockClock \
 	Terminal \
 	totalcmd \
-	quickpic_4.2 \
+	quickpic \
 	unrar \
 	zip
 
